@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio MAteus</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link href='https://css.gg/arrow-down.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://css.gg/arrow-down.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+
+    <header>
+        <div>
+            <img src="imgs/download.png" alt="logo-site">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="em__desenvolvimento">github</a>
+            </li>
+
+            <li>
+                <a target="_blank" href="https://wa.me/64993447597">whats</a>
+            </li>
+
+            <li>
+                <a target="_blank" href="mailto:teste@mateus.dev">email</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="conteiner">
+            <div class="nome">
+                <h1>Mateus</h1>
+                <h5>XP 49 Front-end</h5>
+            </div>
+
+
+            <div onclick="display()" id="seta">
+                <I id="animado" class="material-icons">south</I>
+
+
+            </div>
+
+            <div style="display: none;" id="sobre">
+                <p>Estudante de engenhria de sowftare apaixonado por tecnologia, gosto sempre de estra buscando novos
+                    desafios, e sempe estar me aprimorando, para que não fique estaginado tando pessoalmete quanto
+                    profissionalmete, pretendo me espessializar na area mobile, atualmete teno um conhecimento
+                    introdutorio de HTML, CSS e JS .</p>
+            </div>
+            <div class="formulario">
+                <div>
+                    <p>Assine a newsletter</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email ;-)">
+                    <button onclick="enviar" id="envi">Assinar!</button>
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+
+    <Footer class="rodape">
+
+        BY MATEUS &copy;
+
+    </Footer>
+
+
+
+
+
+
+
+    <script>
+        function display() {
+            var seta = document.getElementById('animado');
+            seta.classList.toggle('rotate')
+
+            var display = document.getElementById('sobre');
+            display.classList.toggle('mostra')
+        }
+
+
+        function enviar() {
+
+            document.getElementById("envi").addEventListener("enviar", function (onclick = "enviar") {
+                window.open("https://www.example.com", "_blank");
+            });
+        }
+
+    </script>
+</body>
+
+</html>
